@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Quiz App</title>
+  <link rel="icon" href="title_icon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/167ea13437.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Play Quiz</h1>
+    <i class="fas fa-question-circle fa-2x"></i>
+  </header>
+  <main>
+    <div class="main">
+      <div class="start">
+        <button type="button" name="button" class="start_btn">Start</button>
+      </div>
+      <div class="rule">
+        <div class="info_box">
+          <div class="info_title">
+            <span>Rules Of the Quiz</span>
+          </div>
+          <hr>
+          <div class="info_list">
+            <div class="info">
+              1. Once you selected the option,you can't reselect an option.
+            </div>
+            <div class="info">
+              2. You can't exit from the Quiz while you are playing.
+            </div>
+          </div>
+          <hr>
+          <div class="info_buttons">
+            <button type="button" name="button" class="btn exit">Exit Quiz</button>
+            <button type="button" name="button" class="btn continue">Continue</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="quiz_box" id="quiz">
+        <div class="quiz_content">
+          <h2 id="question">Questions</h2>
+          <ul>
+            <li id="a" class="a_text answer">Answer</li>
+
+            <li id="b" class="b_text answer">Answer</li>
+
+            <li id="c" class="c_text answer">Answer</li>
+
+            <li id="d" class="d_text answer">Answer</li>
+          </ul>
+        </div>
+        <div class="next">
+          <button id="n" type="button" name="button">Next</button>
+        </div>
+      </div>
+      <div class="result_box">
+        <img class="result_logo" src="results.png" alt="" height="100px">
+        <div class="result">
+          <p class="scored"></p>
+        </div>
+        <div class="result_btns">
+          <button class="play_again btn" type="button" name="button">Play Again <i class="fas fa-redo-alt"></i></button>
+          <button class="quit btn" type="button" name="button">Quit</button>
+        </div>
+      </div>
+  </main>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>
